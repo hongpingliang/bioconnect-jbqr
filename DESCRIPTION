@@ -1,0 +1,26 @@
+Package: jbqr
+Type: Package
+Title: R Package for JBQ (JAX BioConnect Query tool)
+Version: 0.1.0
+Authors@R: c(
+    person("Jake", "Emerson", role = c("aut"), email = "jake.emerson@jax.org"),
+    person("Hongping", "Liang", role = c("aut", "cre"), email = "hongping.liang@jax.org"))
+Maintainer: The package maintainer <hongping.liang@jax.org>
+Description: R wrapper class to call JBQ functions
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.1
+VignetteBuilder: knitr
+Depends: 
+    R (>= 4.4)
+Suggests: 
+    testthat (>= 2.3.2),
+    knitr (>= 1.29), 
+    rmarkdown    
+Imports:
+    here,
+    logger,
+    R6 (>= 2.4.0),
+    stringr (>= 1.4.0)
