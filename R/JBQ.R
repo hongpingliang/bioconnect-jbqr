@@ -52,8 +52,6 @@ JBQ = R6::R6Class(
     initialize = function(
       path_to_file_or_dir = NULL
     ) {
-
-      log_info("Version: {get_version()}")
       self$path_to_file_or_dir = path_to_file_or_dir
     },
 
@@ -204,7 +202,7 @@ JBQ = R6::R6Class(
     #'
     #' @return character, version
     get_version = function() {
-      "0.0.1 build_2024_06_26"
+      "0.0.1 build_2024_06_27"
     },
 
     #' @description
