@@ -1,6 +1,6 @@
 library(stringr)
-library(logger)
-log_threshold(DEBUG)
+#library(logger)
+#log_threshold(DEBUG)
 
 #' The JBQ | JAX BioConnect Query tool
 #'
@@ -154,7 +154,7 @@ JBQ = R6::R6Class(
     operation = NULL
     ) {
       cmd = paste0("jbq", " ", command, " ", operation)
-      log_debug("cmd: {cmd}")
+      #log_debug("cmd: {cmd}")
       output <- system(cmd, intern=TRUE)
       output
     },
@@ -175,7 +175,7 @@ JBQ = R6::R6Class(
       part = strsplit(output_string, "<csv_file_path>")[[1]][2]
       file_path <- strsplit(part, "</csv_file_path>")[[1]][1]
 
-      log_debug("file: {file_path}")
+      #log_debug("file: {file_path}")
       if ( is.na(file_path) || is.null(file_path) || nchar(file_path) < 1 ) {
         return (NULL)
       }
